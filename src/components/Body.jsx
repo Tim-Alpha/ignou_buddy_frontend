@@ -3,7 +3,7 @@ import React from 'react'
 function Body() {
   return (
     <div>
-      <h2>Hello Developer Please Develope me with your skills</h2>
+      <h2>Hi I'm Suresh for developing You </h2>
     </div>
   )
 }
