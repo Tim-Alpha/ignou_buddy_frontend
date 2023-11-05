@@ -1,9 +1,12 @@
 import React from 'react'
+import Signup from './Signup'
+import Login from './Login'
 
 function Body() {
   return (
-    <div>
-      <h2>Hi I'm Suresh for developing You </h2>
+    <div className='container'> 
+      <Signup />
+      {/* <Login />  */}
     </div>
   )
 }
