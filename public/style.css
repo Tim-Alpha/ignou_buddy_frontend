@@ -11,7 +11,7 @@ html {
 body {
     background-color: #eee;
     padding: 0 16px;
-   
+
 }
 
 header {
@@ -60,32 +60,166 @@ header h1 {
         display: block;
     }
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
 }
 
-.signupContainer{
+.signupContainer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: aqua;
-    padding: 50px;
-    height: 350px;
-    width: 600px;
+    /* background-color: aqua; */
+    /* padding: 0px; */
+    height: 100vh;
+    width: 100vw;
 
 }
-.registration{
-    background-color: brown;
-    height: 300px;
-    width: 300px;
+
+/* image Container Css */
+
+.image {
+    /* border-radius: 10px; */
+    /* box-sizing: border-box; */
+    /* box-shadow: 2px 2px 2px 2px grey; */
+    /* background-color: cadetblue; */
+    height: 400px;
+    width: 500px;
 }
-.image{
-    background-color: cadetblue;
-    height: 300px;
-    width: 300px;
+
+.icontainer {
+    display: flex;
+}
+
+.roofleft {
+
+    background-color:rgb(0, 230, 161);
+    width: 50%;
+    height: 6px;
+    rotate: -37deg;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+.roofright {
+    background-color: rgb(0, 230, 161);
+    width: 50%;
+    height: 6px;
+    rotate: z 37deg;
+    margin-top: 80px;
+    margin-left: -60px;
+
+
+}
+
+.itext {
+    color:rgb(128, 0, 64);
+   display: flex;
+    margin: 55px;
+    /* color: white; */
+    justify-content: center;
+    align-items: center;
+    font-size: 37px;
+    margin-left: 35px;
+    margin-top: 39px;
+   font-weight: bold;
+
+}
+
+.logo {
+    display: flex;
+    border-radius: 10px;
+    /* background-color: grey; */
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    color: rgb(17, 1, 1);
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.iWord{
+margin-right: 50px;
+}
+
+/* registration Css */
+.registration {
+    /* border-radius: 10px; */
+    /* box-sizing: border-box; */
+    /* box-shadow: 2px 2px 2px 2px grey; */
+    /* background-color: rgba(110, 42, 165, 0.477); */
+    height: 400px;
+    width: 500px;
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+
+}
+
+
+
+.inputs {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+
+input {
+    font-size: 20px;
+    display: flex;
+    width: 550px;
+    height: 60px;
+    border-radius: 8px;
+    padding: 10px;
+    border-color: aqua;
+    margin-top: 10px;
+
+
+}
+
+.signtag {
+    font-size: 30px;
+    background-color: rgb(234, 234, 234);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    cursor: pointer;
+    padding: 10px 30px;
+    font-weight: 400;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.signtag:hover{
+    background-color: rgb(0, 230, 161);
+    color: white;
+    border: 2px solid salmon;
+}
+
+
+.login {
+    margin-left: 5px;
+    color:black;
+    font-size: 20px;
+    cursor: pointer;
+    /* border-radius: 5px ; */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.login:hover{
+   color: rgb(0, 230, 161);
+   text-decoration:underline ;
+}
+.footer_sign{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .chat-button {
