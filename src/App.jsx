@@ -4,6 +4,8 @@ import Footer from "./components/Footer"
 import ChatButton from "./components/ChatButton";
 import Body from "./components/Body";
 
+
+
 function App() {
   return (
     <div>
@@ -11,6 +13,7 @@ function App() {
       <Body />
       <Footer />
       <ChatButton />
+
     </div>
   );
 }
