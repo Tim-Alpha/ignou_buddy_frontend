@@ -1,21 +1,23 @@
-import React from "react";
-import Header from "./components/Header";
-import Footer from "./components/Footer"
-import ChatButton from "./components/ChatButton";
-import Body from "./components/Body";
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import SignUp from './pages/SignUp';
+import Header from './components/Header';
+import Login from './pages/Login';
 
-
-
-function App() {
+const App = () => {
   return (
-    <div>
+    <Router>
       <Header />
-      <Body />
-      <Footer />
-      <ChatButton />
-
-    </div>
-  );
+      <div className='container mt-4'>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/SignUp' element={<SignUp />} />
+          <Route path='/Login' element={<Login />} />
+        </Routes>
+      </div>
+    </Router>
+  )
 }
 
-export default App;
+export default App

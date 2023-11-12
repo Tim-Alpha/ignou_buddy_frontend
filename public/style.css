@@ -146,10 +146,6 @@ margin-right: 50px;
 
 /* registration Css */
 .registration {
-    /* border-radius: 10px; */
-    /* box-sizing: border-box; */
-    /* box-shadow: 2px 2px 2px 2px grey; */
-    /* background-color: rgba(110, 42, 165, 0.477); */
     height: 400px;
     width: 500px;
     display: flex;
@@ -207,7 +203,6 @@ input {
     color:black;
     font-size: 20px;
     cursor: pointer;
-    /* border-radius: 5px ; */
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
@@ -254,6 +249,6 @@ footer p {
 /* Hide footer for mobile viewers*/
 @media (max-width: 450px) {
     footer {
-        display: none;
+        display:flex;
     }
 }
