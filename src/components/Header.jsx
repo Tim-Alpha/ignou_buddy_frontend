@@ -8,40 +8,34 @@ const Header = () => {
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link to="/" className="navbar-brand">
-        <span className='m-4 strong font-monospace'>IGNOU BUDDY</span>
-      </Link>
-      <button
-        className="navbar-toggler"
-        type="button"
-        onClick={handleNavCollapse}
-        aria-expanded={!isNavCollapsed}
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarNav">
-        <ul className="navbar-nav ml-auto">
-          {/* Uncomment or add your links here */}
-          <li className="nav-item">
-            <Link to="/about" className="nav-link">
-              About
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/signup" className="nav-link">
-              Sign Up
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/login" className="nav-link">
-              Login
-            </Link>
-          </li>
-        </ul>
+    <div className={`d-flex ${isNavCollapsed ? '' : 'toggled'}`} id="wrapper">
+      {/* Sidebar */}
+      <div className="border-end bg-white" id="sidebar-wrapper">
+        <div className="sidebar-heading"><span className='strong font-monospace'>IGNOU BUDDY</span></div>
+        <div className="list-group list-group-flush">
+          <Link to="/about" className="list-group-item list-group-item-action list-group-item-light p-3">
+            About
+          </Link>
+          <Link to="/signup" className="list-group-item list-group-item-action list-group-item-light p-3">
+            Sign Up
+          </Link>
+          <Link to="/login" className="list-group-item list-group-item-action list-group-item-light p-3">
+            Login
+          </Link>
+        </div>
       </div>
-    </nav>
+
+      {/* Page Content */}
+      <div id="page-content-wrapper">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+          <button className="btn btn-primary" id="sidebarToggle" onClick={handleNavCollapse}>
+            Toggle Menu
+          </button>
+          {/* Add other navbar content here */}
+        </nav>
+        {/* Add main page content here */}
+      </div>
+    </div>
   );
 };
 
