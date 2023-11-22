@@ -1,31 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = () => {
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link to="/" className="navbar-brand ">
-       <span className=' m-4 strong font-monospace'> IGNOU BUDDY</span>
+      <Link to="/" className="navbar-brand">
+        <span className='m-4 strong font-monospace'>IGNOU BUDDY</span>
       </Link>
       <button
         className="navbar-toggler"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
+        onClick={handleNavCollapse}
+        aria-expanded={!isNavCollapsed}
         aria-label="Toggle navigation"
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
+      <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarNav">
         <ul className="navbar-nav ml-auto">
-          <li className="nav-item">
-            {/* <Link to="/home" className="nav-link">
-              Home
-            </Link> */}
-          </li>
+          {/* Uncomment or add your links here */}
           <li className="nav-item">
             <Link to="/about" className="nav-link">
               About
