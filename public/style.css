@@ -281,3 +281,29 @@ footer p {
     border-radius: 50%;
     background: rgba(28, 17,41,0.8);
 }
+.menu-bar{
+    height: 80vh;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 15px;
+    position: relative;
+}
+.toggle-theme-btn{
+position: absolute;
+bottom: 30px;
+left: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1rem
+}
+.toggle{
+    margin-left: 15px;
+}
+.side{
+display: flex;
+flex-direction: row;
+margin-top: 20px;
+}
