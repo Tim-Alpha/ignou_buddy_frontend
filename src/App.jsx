@@ -4,10 +4,23 @@ import Home from './pages/Home';
 import SignUp from './pages/SignUp';
 import Header from './components/Header';
 import Login from './pages/Login';
+import {Layout} from 'antd';
+import Logo from './components/Sidebar/Logo';
+import MenuList from './components/Sidebar/MenuList';
+
+
+const {Sider} =Layout;
 
 const App = () => {
   return (
+    <Layout>
     <Router>
+      
+      <Sider className='sidebar'>
+        <Logo/>
+        <MenuList/>
+      </Sider>
+     
       <Header />
       <div className='container mt-4'>
         <Routes>
@@ -17,6 +30,7 @@ const App = () => {
         </Routes>
       </div>
     </Router>
+    </Layout>
   )
 }
 
