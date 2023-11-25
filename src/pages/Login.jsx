@@ -29,7 +29,8 @@ const Login = () => {
                                 onChange={(e) => setPassword(e.target.value)}
                         />
 
-                        <button className=' mt-2 btn btn-primary'>Login</button>
+                        <button className=' mt-2 btn btn-primary m-2'>Login</button>
+                        <button className=' mt-2 btn btn-primary px-2 m-2 '> Forget Password</button>
                     </div>
                 </div>
                 <div className="col-md-6">

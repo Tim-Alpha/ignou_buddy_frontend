@@ -68,9 +68,11 @@ const SignUp = () => {
                             onChange={(e) => setPassword(e.target.value)}
                         />
                         
-                        <button className=" mt-2 btn btn-primary">Sign Up</button>
+                        <button className=" mt-2 btn btn-primary m-2">Sign Up</button>
+                        <button  onClick="" className=" mt-2 btn btn-primary m-2">dark mode</button>
                     </div>
                 </div>
+
             </div>
         </div>
     )
